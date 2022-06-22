@@ -18,8 +18,6 @@ const boxs = document.querySelectorAll('.box')
 
 boxs.forEach((box) => {
   box.addEventListener('mouseover', () =>
-  console.log('mouse in') )
-  box.addEventListener('mouseout', () =>
-  console.log('mouse out') )
+  box.classList.add('pen'))
 })
 

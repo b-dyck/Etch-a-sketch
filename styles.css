@@ -5,6 +5,10 @@
     background-color: lightgray;
     flex: 1 0 auto;
   }
+
+  .pen {
+    background-color: black;
+  }
  
   .row {
     display: flex;
