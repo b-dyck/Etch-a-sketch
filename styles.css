@@ -1,0 +1,15 @@
+.box {
+    border: 1px solid red;
+    height: 46px;
+    width: 46px;
+    background-color: lightgray;
+    flex: 1 0 auto;
+  }
+ 
+  .row {
+    display: flex;
+    flex-direction: row;
+    height: 48px;
+    flex: 1 0 auto;
+    justify-content: space-evenly;
+  }
