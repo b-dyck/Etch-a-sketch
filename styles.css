@@ -1,9 +1,14 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .box {
     border: 1px solid red;
     height: 46px;
     width: 46px;
     background-color: lightgray;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
   }
 
   .pen {
@@ -14,6 +19,6 @@
     display: flex;
     flex-direction: row;
     height: 48px;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
     justify-content: space-evenly;
   }

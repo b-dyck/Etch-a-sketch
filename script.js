@@ -11,13 +11,38 @@ function createBoxes(numBox) {
     }
   }
 }
+function removeBoxes() {
+  const rows = document.querySelectorAll('.row')
+  rows.forEach((row) => {
+    container.removeChild(row)
+  })
+}
 
-createBoxes(16)
+const button = document.querySelector('button')
 
-const boxs = document.querySelectorAll('.box')
+button.addEventListener('click', () => {
+  let size = parseInt(prompt('How many rows and columns in your etch-a-sketch?', '10'))
+  if (typeof(size) == 'number') {
+    if (size <100) {
+      removeBoxes()
+      createBoxes(size)
 
-boxs.forEach((box) => {
-  box.addEventListener('mouseover', () =>
-  box.classList.add('pen'))
+      const boxs = document.querySelectorAll('.box')
+
+      boxs.forEach((box) => {
+        box.addEventListener('mouseover', () =>
+        box.classList.add('pen'))
+      })
+    }
+    else {
+      alert('Must be less than 100')
+    }
+
+  }
+  else {
+    alert('Try again using a number')
+  }
+
+
 })
 
